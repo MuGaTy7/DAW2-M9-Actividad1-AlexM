@@ -17,7 +17,8 @@ body::-webkit-scrollbar-thumb {
   box-sizing: border-box;
 }
 nav {
-  position: fixed;
+  position: sticky;
+  top: 0px;
   z-index: 10;
   background: #121329;
   height: 80px;
@@ -35,6 +36,7 @@ nav .enlace .logo {
 }
 nav ul {
   float: right;
+  padding-left: 0;
 }
 @media (max-width: 702px) {
   nav ul {
@@ -123,6 +125,7 @@ nav #check {
 }
 .carousel .carousel-inner {
   height: 70vh;
+  overflow: unset;
 }
 .carousel .carousel-inner img {
   height: 70vh;
