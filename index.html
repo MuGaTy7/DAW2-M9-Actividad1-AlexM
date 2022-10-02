@@ -24,6 +24,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Link JS -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type='text/javascript' src='./js/ir-arriba.js'></script>
     <title>Almansa | Bar - Restaurante</title>
 </head>
 
@@ -33,15 +36,18 @@
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
+        <a href="" class="enlace">
+            <img src="./img/Almansa - Logo - M9 - Pequeño.png" alt="" class="logo-peq">
+        </a>
         <a href="#" class="enlace">
             <img src="./img/Almansa - Logo - M9.png" alt="" class="logo">
         </a>
         <ul>
-            <li><a class="active" href="#inicio">Inicio</a></li>
             <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Portafolio</a></li>
+            <li><a href="#">Menú</a></li>
             <li><a href="#">Contacto</a></li>
+            <li><a href="#">Ubicación</a></li>
+            <li><a href="#">Galeria</a></li>
         </ul>
     </nav>
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -65,30 +71,118 @@
                 <span class="visually-hidden">Next</span>
             </button>
     </div>
+    <span class="ir-arriba"><i class="fa-solid fa-arrow-up"></i></span>
+    <div id="nosotros" class="region-textos f-section">
+        <div class="widget-text">
+            <div class="text">
+                <h4 style="margin-bottom: 30px; "><b>Sobre Nosotros</b></h4>
+                <p>Almansa es un espacio que fundamos con la idea de disfrutar de los pequeños placeres que nos hacen felices: la cerveza, los amigos, los buenos snacks y la buena música.</p>
+            </div>
+            <div class="imagen">
+                <img src="./img/john-matychuk-gUK3lA3K7Yo-unsplash.jpg " alt=" ">
+            </div>
+        </div>
     </div>
+    <div class="region-textos s-section">
+        <div class="widget-text">
+            <div class="imagen nosotros">
+                <img src="./img/jude-infantini-rYOqbTcGp1c-unsplash.jpg " alt=" ">
+            </div>
+            <div class="text">
+                <h4 style="margin-bottom: 30px; "><b>El concepto que nos hace únicos</b></h4>
+                <p>La calidad y la originalidad son marca de la casa. Una de las claves del éxito de la carta es el pan de receta patentada y que además se hornea en el momento en el que el cliente hace el pedido.</p>
+            </div>
+        </div>
+    </div>
+    <div class="region-textos f-section">
+        <div class="widget-carta">
+            <div class="text">
+                <h4>Nuestro Menú</h4>
+            </div>
+            <div class="carta">
+                <img src="./img/eduardo-roda-lopes-mNefYU7uRbk-unsplash.jpg" alt="Carta_Almansa" class="img-carta">
+                <div class="overlay">
+                    <div class="message">
+                        <a target="_blank" href="./Menú Restaurante Almansa.pdf">Ver Carta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- WAVE-1 -->
+    <img class="wave" src="./img/wave-haikei.svg" alt="">
+    <!--  -->
+    <div style="padding: 15px 50px 65px 50px;" class="region-textos s-section">
+        <div class="widget-text">
+            <div class="horario">
+                <div class="fondo-horario">
+                    <h4><b>Horario</b></h4>
+                    <div class="separator-2"></div>
+                    <p>Abrimos de martes a domingo</p>
+                    <p>Lunes cerrado</p>
+                </div>
+            </div>
+            <div class="horario">
+                <div class="fondo-horario">
+                    <h4><b>Contacto</b></h4>
+                    <div class="separator-2"></div>
+                    <p>Teléfono:
+                        <a href="tel:+34678567876">+34678567876</a>
+                    </p>
+                    <p>WhatsApp:
+                        <a target="_blank" href="https://wa.me/661023069">661023069</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- WAVE-3 -->
+    <img class="wave" style="margin-top: -90px; top: 100px; z-index: -2;" src="./img/wave-haikei-3.svg" alt="">
+    <!--  -->
+    <div class="region-textos f-section">
+        <div class="widget-text">
+            <div style="width: 50%; align-items: center;" class="text">
+                <h4><b>¿Donde estamos ubicados?</b></h4>
+                <p><a target="_blank" href="https://goo.gl/maps/kkTaPXaf8FwDBA5AA">Carrer del Bosc, 08521 Bellavista, Barcelona</a></p>
+            </div>
+            <div class="separator"></div>
+            <div style="width: 50%;" class="imagen">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d383.7657205488043!2d2.2980806014828072!3d41.61845232096869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c62b4e8aa4a9%3A0xf076e4afff9bff1b!2sBar%20Restaurant%20Almansa!5e0!3m2!1ses!2ses!4v1664632537487!5m2!1ses!2ses"
+                    width="75%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- WAVE-2 -->
+    <img class="wave" src="./img/wave-haikei-2.svg" alt="">
+    <!--  -->
+    <div style="top: -65px; z-index: -3; padding-bottom: 0;" class="region-textos s-section">
+        <h4 style="margin-bottom: 15px;"><b>Galeria</b></h4>
+        <p style="margin-bottom: 50px;">En esta sección podrás encontrar algunos de nuestros platos estrella, o aquellos mejor valorados por nuestros clientes!</p>
+        <div class="widget-text">
+            <!-- Gallery -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-xs-12 mb-4 mb-lg-0">
+                    <img src="./img/plato-1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
 
-    <div class="region-textos">
-        <div class="widget-text">
-            <div class="text">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum necessitatibus quasi alias rerum corrupti eos labore porro omnis ut odio animi aliquam ratione soluta, dolorem, vitae deserunt, praesentium aperiam maxime.</p>
+                    <img src="./img/plato-3.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-xs-12 mb-4 mb-lg-0">
+                    <img src="./img/plato-2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+
+                    <img src="./img/plato-4.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-xs-12 mb-4 mb-lg-0">
+                    <img src="./img/plato-6.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+
+                    <img src="./img/plato-5.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+                </div>
             </div>
-            <div class="imagen">
-                <img src="" alt="">
-            </div>
+            <!-- Gallery -->
         </div>
     </div>
-    <div class="region-textos">
-        <div class="widget-text">
-            <div class="text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorem dignissimos, doloremque nobis totam veniam earum nostrum? Voluptatem, consequuntur quaerat temporibus nulla minus dolorum earum, necessitatibus, eligendi odio veritatis
-                    sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates possimus reiciendis repellendus recusandae non dolore vitae dolorem quos soluta eligendi? Culpa iure sequi architecto, fugiat nihil aliquid eligendi enim consequatur?
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius magni quo optio, aut repellendus corporis, accusantium at officiis fuga distinctio a reprehenderit beatae provident impedit hic repellat labore cupiditate ipsum!</p>
-            </div>
-            <div class="imagen">
-                <img src="" alt="">
-            </div>
-        </div>
-    </div>
+    <!-- <div style="top: -66px;" class="region-textos f-section"></div> -->
 </body>
 
 </html>

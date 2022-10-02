@@ -2,11 +2,29 @@ body::-webkit-scrollbar {
   width: 12px;
 }
 body::-webkit-scrollbar-track {
-  background: #121329;
+  background: #1f1f1f;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #797DDB;
+  background-color: #FFDE59;
   border-radius: 10px;
+}
+@media (max-width: 450px) {
+  p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 450px) {
+  h6 {
+    font-size: 14px;
+  }
+}
+a {
+  text-decoration: none;
+}
+@media (max-width: 450px) {
+  a {
+    font-size: 12px;
+  }
 }
 * {
   font-family: 'Poppins', sans-serif;
@@ -20,7 +38,7 @@ nav {
   position: sticky;
   top: 0px;
   z-index: 10;
-  background: #121329;
+  background: #1f1f1f;
   height: 80px;
   width: 100%;
 }
@@ -28,11 +46,38 @@ nav .enlace {
   position: absolute;
   padding: 0px 50px;
 }
-@media (max-width: 858px) {
+@media (max-width: 702px) {
+  nav .enlace {
+    padding: 0px 20px;
+  }
 }
 nav .enlace .logo {
   height: 80px;
   width: 100px;
+}
+@media (min-width: 702px) {
+  nav .enlace .logo {
+    display: block;
+  }
+}
+@media (max-width: 702px) {
+  nav .enlace .logo {
+    display: none;
+  }
+}
+nav .enlace .logo-peq {
+  height: 80px;
+  width: 100px;
+}
+@media (min-width: 702px) {
+  nav .enlace .logo-peq {
+    display: none;
+  }
+}
+@media (max-width: 702px) {
+  nav .enlace .logo-peq {
+    display: block;
+  }
 }
 nav ul {
   float: right;
@@ -43,7 +88,7 @@ nav ul {
     position: fixed;
     width: 100%;
     height: calc(100vh - 80px);
-    background: #121329ef;
+    background: #1f1f1feb;
     top: 80px;
     right: -100%;
     text-align: center;
@@ -114,35 +159,226 @@ nav .checkbtn {
 nav #check {
   display: none;
 }
-@media (max-width: 858px) {
+@media (max-width: 702px) {
   nav #check:checked ~ ul {
     right: 0;
   }
 }
 .carousel {
   z-index: 1;
-  height: 70vh;
+  height: 60vh;
 }
 .carousel .carousel-inner {
-  height: 70vh;
+  height: 60vh;
   overflow: unset;
 }
 .carousel .carousel-inner img {
-  height: 70vh;
+  object-fit: cover;
+  height: 60vh;
 }
-.region-textos {
+.f-section {
+  background-color: #1f1f1f;
+  color: #fff;
+  box-shadow: 0px 0px 50px -10px #1f1f1f;
+}
+.s-section {
+  background-color: #b3b3b3;
+  color: black;
+}
+body {
+  background-color: #b3b3b3;
+}
+body .wave {
+  width: 100%;
+  margin-top: -19px;
+  position: relative;
+  top: -40px;
+  z-index: -2;
+  object-fit: cover;
+  min-height: 200px;
+}
+body .region-textos {
   position: relative;
   width: 100%;
   padding: 50px;
 }
-.region-textos .widget-text {
+body .region-textos .widget-text {
   width: 100%;
   display: flex;
   flex-direction: row;
 }
-.region-textos .widget-text .text {
-  width: 50%;
+@media (max-width: 702px) {
+  body .region-textos .widget-text {
+    flex-direction: column;
+  }
 }
-.region-textos .widget-text .imagen {
-  width: 50%;
+body .region-textos .widget-text .text {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 702px) {
+  body .region-textos .widget-text .text {
+    width: 100%!important;
+  }
+}
+body .region-textos .widget-text .text a {
+  color: white;
+}
+body .region-textos .widget-text .horario {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 300px;
+}
+@media (max-width: 702px) {
+  body .region-textos .widget-text .horario {
+    margin-bottom: 50px;
+  }
+}
+body .region-textos .widget-text .horario .fondo-horario {
+  width: 80%;
+  background-color: #FFDE59;
+  border: solid 3px #FFDE59;
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px -10px #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+body .region-textos .widget-text .horario .fondo-horario:hover {
+  transform: scale(1.1);
+}
+body .region-textos .widget-text .horario .fondo-horario .separator-2 {
+  width: 10%;
+  height: 0.3%;
+  background-color: black;
+  margin-bottom: 25px;
+}
+body .region-textos .widget-text .horario .fondo-horario p {
+  margin-bottom: 7px;
+}
+@media (max-width: 702px) {
+  body .region-textos .widget-text .horario .fondo-horario {
+    width: 100%;
+  }
+}
+@media (max-width: 702px) {
+  body .region-textos .widget-text .blob {
+    display: none!important;
+  }
+}
+body .region-textos .widget-text .blob img {
+  border-radius: 0px!important;
+}
+body .region-textos .widget-text .separator {
+  width: 0.3%;
+  margin-right: 50px;
+  margin-left: 50px;
+  background-color: white;
+}
+body .region-textos .widget-text .imagen {
+  width: 35%;
+  height: 235px;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 702px) {
+  body .region-textos .widget-text .imagen {
+    width: 100%!important;
+  }
+}
+body .region-textos .widget-text .imagen img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+@media (max-width: 702px) {
+  body .region-textos .widget-text .nosotros {
+    margin-top: -16px;
+    margin-bottom: 20px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  body .region-textos .widget-text .row div:last-child {
+    display: none;
+  }
+}
+body .region-textos .widget-carta {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+body .region-textos .widget-carta .text {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .region-textos .widget-carta .carta {
+  width: 100%;
+  height: 235px;
+  position: relative;
+}
+body .region-textos .widget-carta .carta:hover .overlay {
+  opacity: 1;
+}
+body .region-textos .widget-carta .carta .img-carta {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+body .region-textos .widget-carta .carta .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 235px;
+  opacity: 0;
+  transition: 0.5s ease;
+  border-radius: 20px;
+  background-color: #f5b8836d;
+}
+body .region-textos .widget-carta .carta .overlay .message {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+body .region-textos .widget-carta .carta .overlay .message a {
+  padding: 10px;
+  background-color: #FF973C;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+}
+body .ir-arriba {
+  padding: 30px;
+  z-index: 30;
+  background-color: #FF973C;
+  font-size: 20px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+body .ir-arriba i {
+  padding: 0px 7px;
 }
